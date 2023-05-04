@@ -2,11 +2,15 @@
   "name": "acutils",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type":"module",
+  "main": "min/common.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -d --mode development --config build/webpack.config.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.0.2"
+  }
 }

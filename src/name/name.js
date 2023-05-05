@@ -1,4 +1,5 @@
 function getDataType(target) {
+    console.log('mahaitao');
     let type = typeof target; // 判断是否是复杂数据类型
     if (type === "object") {
       return Object.prototype.toString

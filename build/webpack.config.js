@@ -4,12 +4,11 @@ const path = require('path') // 引用path模块
 const rootPath = path.resolve(__dirname, '../')
 const isEnvDevelopment = false
 module.exports = {
-    // devtool: 'source-map',
-    // devtool: isEnvDevelopment ? 'eval-cheap-module-source-map' : false,
+    devtool: 'source-map',
     entry: path.resolve(rootPath, 'src', "index.js"),
     // devtool: 'inline-source-map',
     output: {
-        filename: 'ma.min.js',
+        filename: 'mutils.min.js',
         path: path.resolve(rootPath, 'min'),
         clean: true, // 自动将上次打包目录资源清空
         library: "mutils",
